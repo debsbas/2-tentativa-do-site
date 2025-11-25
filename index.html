@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WAPED Imobiliária - Encontre seu Imóvel</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+   <nav class="navbar nav-1">
+      <section class="flex">
+         <a href="index.html" class="logo"><i class="fas fa-house"></i>WAPED Imobiliária</a>
+
+         <ul>
+            <li><a href="post_property.html">anunciar imóvel<i class="fas fa-paper-plane"></i></a></li>
+         </ul>
+      </section>
+   </nav>
+
+   <nav class="navbar nav-2">
+      <section class="flex">
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+         <div class="menu">
+            <ul>
+               <li><a href="#">comprar<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="#">casa</a></li>
+                     <li><a href="#">apartamento</a></li>
+                     <li><a href="#">comercial</a></li>
+                     <li><a href="#">pronto para morar</a></li>
+                     <li><a href="#">mobiliado</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">vender<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="post_property.html">anunciar imóvel</a></li>
+                     <li><a href="dashboard.html">painel</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">alugar</a>
+                  <ul>
+                     <li><a href="#">casa</a></li>
+                     <li><a href="#">apartamento</a></li>
+                     <li><a href="#">comercial</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">ajuda<i class="fas fa-angle-down"></i></a>
+                  <ul>
+                     <li><a href="about.html">sobre nós</a></i></li>
+                     <li><a href="contact.html">contato</a></i></li>
+                     <li><a href="contact.html#faq">FAQ</a></i></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+
+         <ul>
+            <li><a href="saved.html">salvos <i class="far fa-heart"></i></a></li>
+            <li><a href="#">minha conta <i class="fas fa-angle-down"></i></a>
+               <ul>
+                  <li><a href="login.html">entrar</a></li>
+                  <li><a href="register.html">cadastrar</a></li>
+               </ul>
+            </li>
+         </ul>
+      </section>
+   </nav>
+</header>
+<div class="home">
+   <section class="center">
+      <form action="search.html" method="post">
+         <h3>encontre seu imóvel perfeito</h3>
+         
+         <div class="box">
+            <p>digite a localização <span>*</span></p>
+            <input type="text" name="location" required maxlength="50" placeholder="digite o nome da cidade" class="input">
+         </div>
+
+         <div class="flex">
+            <div class="box">
+               <p>tipo de propriedade <span>*</span></p>
+               <select name="type" class="input" required>
+                  <option value="apartamento">apartamento</option>
+                  <option value="casa">casa</option>
+                  <option value="comercial">comercial</option>
+               </select>
+            </div>
+            
+            <div class="box">
+               <p>quantos quartos <span>*</span></p>
+               <select name="bedrooms" class="input" required>
+                  <option value="1">1 Quarto</option>
+                  <option value="2">2 Quartos</option>
+                  <option value="3">3 Quartos</option>
+                  <option value="4">4 Quartos</option>
+                  <option value="5">5 Quartos</option>
+                  <option value="6">6 Quartos</option>
+                  <option value="7">7 Quartos</option>
+                  <option value="8">8 Quartos</option>
+                  <option value="9">9 Quartos</option>
+               </select>
+            </div>
+            
+            <div class="box">
+               <p>orçamento mínimo <span>*</span></p>
+               <select name="minimum_budget" class="input" required>
+                  <option value="50000">R$ 50 mil</option>
+                  <option value="100000">R$ 100 mil</option>
+                  <option value="200000">R$ 200 mil</option>
+                  <option value="300000">R$ 300 mil</option>
+                  <option value="500000">R$ 500 mil</option>
+                  <option value="750000">R$ 750 mil</option>
+                  <option value="1000000">R$ 1 Milhão</option>
+                  <option value="2000000">R$ 2 Milhões</option>
+                  <option value="5000000">R$ 5 Milhões</option>
+                  <option value="10000000">R$ 10 Milhões</option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>orçamento máximo <span>*</span></p>
+               <select name="maximum_budget" class="input" required>
+                  <option value="100000">R$ 100 mil</option>
+                  <option value="200000">R$ 200 mil</option>
+                  <option value="300000">R$ 300 mil</option>
+                  <option value="500000">R$ 500 mil</option>
+                  <option value="750000">R$ 750 mil</option>
+                  <option value="1000000">R$ 1 Milhão</option>
+                  <option value="2000000">R$ 2 Milhões</option>
+                  <option value="5000000">R$ 5 Milhões</option>
+                  <option value="10000000">R$ 10 Milhões</option>
+                  <option value="20000000">R$ 20 Milhões</option>
+               </select>
+            </div>
+         </div>
+         <input type="submit" value="buscar imóvel" name="search" class="btn">
+      </form>
+   </section>
+</div>
+<section class="services">
+   <h1 class="heading">nossos serviços</h1>
+   <div class="box-container">
+      <div class="box">
+         <img src="images/icon-1.png" alt="Ícone Comprar Casa">
+         <h3>comprar casa</h3>
+         <p>Encontre a casa dos seus sonhos com a nossa ajuda especializada.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-2.png" alt="Ícone Alugar Casa">
+         <h3>alugar casa</h3>
+         <p>Opções de aluguel para todos os gostos e orçamentos.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-3.png" alt="Ícone Vender Casa">
+         <h3>vender casa</h3>
+         <p>Anuncie e venda seu imóvel de forma rápida e segura.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-4.png" alt="Ícone Apartamentos e Edifícios">
+         <h3>apartamentos e edifícios</h3>
+         <p>Diversas opções em condomínios e prédios modernos.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-5.png" alt="Ícone Lojas e Comércio">
+         <h3>lojas e comércios</h3>
+         <p>Encontre o ponto comercial perfeito para o seu negócio.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-6.png" alt="Ícone Atendimento 24/7">
+         <h3>atendimento 24/7</h3>
+         <p>Suporte e atendimento contínuo para você.</p>
+      </div>
+   </div>
+</section>
+<section class="listings">
+   <h1 class="heading">últimos imóveis</h1>
+   <div class="box-container">
+      
+      <div class="box">
+         <div class="admin">
+            <h3>w</h3>
+            <div>
+               <p>WAPED Corretor</p>
+               <span>25-11-2025</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+            <p class="type"><span>casa</span><span>venda</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="images/house-img-1.webp" alt="Imagem da Casa 1">
+         </div>
+         <h3 class="name">apartamento moderno em edifício</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>setor bueno, goiânia, goiás - 74115-010</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>3</span></p>
+            <p><i class="fas fa-bath"></i><span>2</span></p>
+            <p><i class="fas fa-maximize"></i><span>75m²</span></p>
+         </div>
+         <a href="view_property.html" class="btn">ver imóvel</a>
+      </div>
+
+      <div class="box">
+         <div class="admin">
+            <h3>w</h3>
+            <div>
+               <p>WAPED Corretor</p>
+               <span>20-11-2025</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+            <p class="type"><span>apartamento</span><span>venda</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="images/house-img-2.webp" alt="Imagem da Casa 2">
+         </div>
+         <h3 class="name">flat com vista panorâmica</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>jardim américa, goiânia, goiás - 74215-020</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>1</span></p>
+            <p><i class="fas fa-bath"></i><span>1</span></p>
+            <p><i class="fas fa-maximize"></i><span>45m²</span></p>
+         </div>
+         <a href="view_property.html" class="btn">ver imóvel</a>
+      </div>
+
+      <div class="box">
+         <div class="admin">
+            <h3>w</h3>
+            <div>
+               <p>WAPED Corretor</p>
+               <span>15-11-2025</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+            <p class="type"><span>comercial</span><span>aluguel</span></p>
+            <form action="" method="post" class="save">
+               <button type="submit" name="save" class="far fa-heart"></button>
+            </form>
+            <img src="images/house-img-3.jpg" alt="Imagem da Casa 3">
+         </div>
+         <h3 class="name">loja comercial no centro</h3>
+         <p class="location"><i class="fas fa-map-marker-alt"></i><span>centro, anápolis, goiás - 75020-010</span></p>
+         <div class="flex">
+            <p><i class="fas fa-bed"></i><span>-</span></p>
+            <p><i class="fas fa-bath"></i><span>1</span></p>
+            <p><i class="fas fa-maximize"></i><span>120m²</span></p>
+         </div>
+         <a href="view_property.html" class="btn">ver imóvel</a>
+      </div>
+
+   </div>
+   <div style="margin-top: 2rem; text-align:center;">
+      <a href="listings.html" class="inline-btn">ver todos</a>
+   </div>
+</section>
+<footer class="footer">
+   <section class="flex">
+      <div class="box">
+         <a href="tel:+556212345678"><i class="fas fa-phone"></i><span>(62) 1234-5678</span></a>
+         <a href="tel:+556298765432"><i class="fas fa-phone"></i><span>(62) 98765-4321</span></a>
+         <a href="mailto:contato@wapedimobiliaria.com"><i class="fas fa-envelope"></i><span>contato@wapedimobiliaria.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>Goiânia, Goiás - Brasil</span></a>
+      </div>
+
+      <div class="box">
+         <a href="index.html"><span>home</span></a>
+         <a href="about.html"><span>sobre</span></a>
+         <a href="contact.html"><span>contato</span></a>
+         <a href="listings.html"><span>todos os imóveis</span></a>
+         <a href="saved.html"><span>imóveis salvos</span></a>
+      </div>
+
+      <div class="box">
+         <a href="#"><span>facebook</span><i class="fab fa-facebook-f"></i></a>
+         <a href="#"><span>twitter</span><i class="fab fa-twitter"></i></a>
+         <a href="#"><span>linkedin</span><i class="fab fa-linkedin"></i></a>
+         <a href="#"><span>instagram</span><i class="fab fa-instagram"></i></a>
+      </div>
+   </section>
+
+   <div class="credit">&copy; copyright @ <span id="currentYear"></span> by <span>WAPED Imobiliária</span> | todos os direitos reservados!</div>
+</footer>
+<script src="js/script.js"></script>
+<script>
+   // Script para atualizar o ano no rodapé
+   document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
